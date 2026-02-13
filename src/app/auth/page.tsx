@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { createBrowserClient } from '@/lib/supabase';
 import { Button } from '@/components/ui/button';
@@ -12,6 +12,14 @@ type AuthMode = 'login' | 'signup';
 type Role = 'client' | 'creator';
 
 export default function AuthPage() {
+  return (
+    <Suspense fallback={null}>
+      <AuthForm />
+    </Suspense>
+  );
+}
+
+function AuthForm() {
   const [mode, setMode] = useState<AuthMode>('login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

@@ -1,0 +1,246 @@
+================================================================================
+KMONG.COM - COMPREHENSIVE UI/UX ANALYSIS
+Korean Freelance Marketplace Platform
+================================================================================
+
+ANALYSIS DATE: February 13, 2026
+PLATFORM: https://kmong.com/
+PURPOSE: Design reference for AI video outsourcing platform redesign
+
+================================================================================
+1. HOMEPAGE/LANDING PAGE STRUCTURE
+================================================================================
+
+HEADER (Sticky, 76px height)
+├── Logo: "kmong" text logo (left)
+├── Navigation Menu: 
+│   ├── 엔터프라이즈기업용 (Enterprise)
+│   ├── 전문가 등록 (Expert Registration)
+│   ├── 로그인 (Login)
+│   └── 회원가입 (Sign Up)
+├── Category Navigation: Horizontal menu with main categories
+│   ├── 디자인 (Design)
+│   ├── IT·프로그래밍 (IT/Programming)
+│   ├── 영상·사진·음향 (Video/Photo/Audio)
+│   ├── 마케팅 (Marketing)
+│   ├── 전자책 (E-books)
+│   ├── 세무·법무·노무 (Tax/Legal/HR)
+│   └── AI 서비스 (AI Services)
+└── User Menu: Login/Signup buttons (right)
+
+HERO SECTION
+├── Headline: "성공이 필요한 순간, 딱 맞는 전문가를 찾아보세요"
+│   (When you need success, find the perfect expert)
+├── Search Bar: 
+│   ├── Placeholder: "어떤 전문가가 필요하세요?" (What expert do you need?)
+│   ├── Style: Rounded pill-shaped input
+│   ├── Icon: Magnifying glass on right
+│   └── Width: Full width, centered
+├── Quick Category Tags: Popular searches below search bar
+│   └── Examples: 로고, 앱, 상세페이지, 라탑, 블로그, PPT, 전기요금, 포도산
+└── Promotional Banner (Right side):
+    ├── Colorful gradient background (purple/blue)
+    ├── Product showcase image
+    ├── Carousel indicator (e.g., "2/5")
+    └── Call-to-action text
+
+CATEGORY NAVIGATION SECTION
+├── Layout: Horizontal scrollable grid
+├── Categories with Icons:
+│   ├── 영상 (Video) - "인기" badge
+│   ├── 뷰티 (Beauty) - "인기" badge
+│   ├── 디자인 (Design)
+│   ├── IT프로그래밍 (IT/Programming)
+│   ├── 영상·사진·음향 (Video/Photo/Audio)
+│   ├── 마케팅 (Marketing)
+│   ├── 전자책 (E-books)
+│   ├── 세무·법무·노무 (Tax/Legal/HR)
+│   ├── AI 서비스 (AI Services) - "Best" badge
+│   └── 전자제기 (More categories)
+├── Design: Colorful icons + text labels
+└── Responsive: Scrollable on mobile
+
+SERVICE LISTING SECTIONS (Multiple curated sections)
+├── Section 1: "쇼핑몰 사장님이 많이 찾아요" (Popular with Shop Owners)
+├── Section 2: "매장 운영할 때 많이 찾아요" (Popular for Store Operations)
+├── Section 3: "에너지창업자들이 많이 찾아요" (Popular with Entrepreneurs)
+└── Each section contains:
+    ├── Grid Layout: 4 columns (desktop), 2 (tablet), 1 (mobile)
+    └── Service Cards:
+        ├── Image: Large thumbnail (16:9 aspect ratio)
+        ├── Title: Service name (2-3 lines max)
+        ├── Rating: Star rating + review count (e.g., "5.0 (300)")
+        ├── Price: Starting price in Won (e.g., "10,000원~")
+        ├── Seller Info: Circular avatar + seller name
+        └── Badges: "인기" (Popular), "Best", "Prime"
+
+FOOTER
+├── Multi-column layout
+├── Company info and logo
+├── Service category links
+├── Help/Support links
+├── Legal/Policy links
+├── Social media links
+└── Copyright information
+
+================================================================================
+2. CATEGORY PAGE STRUCTURE
+================================================================================
+
+PAGE HEADER
+├── Breadcrumb: Home > Category name (e.g., "영상·사진·음향")
+├── Page Title: Large heading with category name
+└── Subtitle: "가장 인기 있는 카테고리 Top5" (Most Popular Category Top 5)
+
+LEFT SIDEBAR - FILTERS (Sticky on scroll)
+├── Expandable filter sections:
+│   ├── 영상 (Video)
+│   │   ├── 광고 영상 (Commercial)
+│   │   ├── 소품 영상 (Product video)
+│   │   ├── 인물 영상 (Portrait video)
+│   │   ├── 제품 영상 (Product video)
+│   │   ├── 교육 영상 (Educational)
+│   │   ├── 행사 영상 (Event video)
+│   │   ├── 유튜브 영상 (YouTube video)
+│   │   ├── 온라인 중계 (Live streaming)
+│   │   ├── 드론 영상 (Drone video)
+│   │   ├── 영상 뮤직영상 (Music video)
+│   │   ├── 현실 스팀 (Reality stream)
+│   │   └── 영상 기타 (Other video)
+│   └── [More filter categories...]
+├── Checkbox multi-select
+└── Clear filters option
+
+MAIN CONTENT AREA
+├── Sorting Options (Top right):
+│   ├── 카테고리 신뢰 보정 (Category trust adjustment)
+│   ├── 서비스 우선 (Service priority)
+│   ├── 에산 (Price)
+│   ├── Prime (Prime services)
+│   ├── 서금정산 알림 (Payment notification)
+│   ├── 포트폴리오 (Portfolio)
+│   ├── MASTER 인정기 (Master recognition)
+│   └── 별도 우심 (Special recommendation)
+├── Active Filters Display: Tag-based filter display
+└── Service Grid:
+    ├── Layout: 4 columns (desktop), 2-3 (tablet), 1 (mobile)
+    └── Cards: Same structure as homepage
+        ├── Image thumbnail
+        ├── Title
+        ├── Rating (stars + count)
+        ├── Price range
+        ├── Seller info (avatar + name)
+        └── Badges
+
+PAGINATION
+└── Likely infinite scroll or "Load More" button
+
+================================================================================
+3. SERVICE DETAIL PAGE STRUCTURE
+================================================================================
+
+PAGE HEADER
+├── Breadcrumb: Home > Category > Service name
+├── Title: Large heading with service name
+├── Rating: Star rating + review count prominently displayed
+└── CTA Button: "주문하기" (Order) in purple
+
+MAIN CONTENT AREA
+├── Gallery/Portfolio Section:
+│   ├── Main Image: Large featured image (16:9 aspect ratio)
+│   ├── Thumbnail Gallery: Horizontal scrollable thumbnails
+│   ├── Carousel Controls: Previous/Next arrows
+│   └── Image Counter: Shows current image number (e.g., "1/5")
+│
+├── Service Description:
+│   ├── Detailed service description
+│   ├── What's included
+│   ├── Delivery time
+│   ├── Revision policy
+│   └── FAQ section
+│
+├── Pricing Section:
+│   ├── Base Price: Starting price prominently shown
+│   ├── Price Tiers: Multiple package options
+│   ├── Pricing Table: Shows different service levels with features
+│   └── CTA: "주문하기" (Order) button for each tier
+│
+└── Reviews Section:
+    ├── Review Count: Total number of reviews
+    ├── Average Rating: Star rating breakdown
+    └── Review List: Individual reviews with:
+        ├── Reviewer name/avatar
+        ├── Rating (stars)
+        ├── Review text
+        ├── Date posted
+        └── Helpful count (thumbs up)
+
+RIGHT SIDEBAR - SELLER/CREATOR INFO
+├── Avatar: Circular profile picture
+├── Name: Seller/freelancer name
+├── Rating: Overall rating and review count
+├── Completion Rate: Percentage of completed projects
+├── Response Time: Average response time
+├── Member Since: Join date
+├── Portfolio Link: Link to full portfolio
+└── Contact Button: "메시지 보내기" (Send message)
+
+CTA BUTTONS
+├── Primary: "주문하기" (Order) - Purple, prominent
+├── Secondary: "메시지 보내기" (Send message)
+├── Tertiary: "찜하기" (Save/Wishlist) - Icon button
+└── Share: "공유하기" (Share) - Icon button
+
+================================================================================
+4. NAVIGATION PATTERNS
+================================================================================
+
+HEADER NAVIGATION
+├── Sticky positioning
+├── Logo clickable (links to home)
+├── Main menu items
+├── Category dropdown/menu
+├── Search bar integrated
+└── User menu (login/signup)
+
+FOOTER NAVIGATION
+├── Multi-column layout
+├── About section
+├── Services/Categories
+├── Support/Help
+├── Legal/Policy
+├── Social media links
+└── Contact information
+
+MOBILE NAVIGATION
+├── Hamburger menu for categories
+├── Search bar remains prominent
+├── Sticky header maintained
+└── Bottom navigation (likely)
+
+================================================================================
+5. KEY UX PATTERNS
+================================================================================
+
+CATEGORY ORGANIZATION
+├── Hierarchical structure
+├── Visual icons for quick scanning
+├── Popular badges highlight trending
+├── Horizontal scrollable on mobile
+└── Expandable subcategories in sidebar
+
+CARD DESIGN PATTERN (Consistent across all pages)
+┌─────────────────────────────┐
+│   Image (16:9 aspect)       │
+├─────────────────────────────┤
+│ Title (2-3 lines max)       │
+│ ⭐ 5.0 (300 reviews)        │
+│ 10,000원~ (Starting price)  │
+│ 👤 Seller Name              │
+│ [Badges: 인기, Best, Prime] │
+└─────────────────────────────┘
+
+Features:
+├── Rounded corners on images
+├── Shadow on hover
+├── Responsive sizi

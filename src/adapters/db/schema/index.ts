@@ -5,3 +5,5 @@ export * from './communication';
 export * from './feedback';
 export * from './audit';
 export * from './portfolio';
+export * from './services';
+export * from './orders';

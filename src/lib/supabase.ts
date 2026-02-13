@@ -1,6 +1,5 @@
 import { createBrowserClient as _createBrowserClient } from '@supabase/ssr';
 import { createServerClient as _createServerClient } from '@supabase/ssr';
-import { cookies } from 'next/headers';
 
 // ---------------------------------------------------------------------------
 // 브라우저(클라이언트 컴포넌트) 용 Supabase 클라이언트
@@ -17,6 +16,7 @@ export function createBrowserClient() {
 // 쿠키 기반 세션 관리
 // ---------------------------------------------------------------------------
 export async function createServerSupabaseClient() {
+  const { cookies } = await import('next/headers');
   const cookieStore = await cookies();
 
   return _createServerClient(
