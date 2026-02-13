@@ -403,7 +403,7 @@ Wave 7 (P3 - Polish - 3 PARALLEL):
 
 ---
 
-- [ ] 2. Supabase SQL Schema + RLS + pgvector
+- [x] 2. Supabase SQL Schema + RLS + pgvector
 
   **What to do**:
   - **RED**: Write pgTAP tests first for RLS policies:
@@ -549,7 +549,7 @@ Wave 7 (P3 - Polish - 3 PARALLEL):
 
 ---
 
-- [ ] 3. Design System (Pastel Aura Theme + shadcn/ui + Shared Components)
+- [x] 3. Design System (Pastel Aura Theme + shadcn/ui + Shared Components)
 
   **What to do**:
   - Configure Tailwind v4 Pastel Aura theme in `src/app/globals.css`:
@@ -664,7 +664,7 @@ Wave 7 (P3 - Polish - 3 PARALLEL):
 
 ### Wave 2: Auth + Profiles
 
-- [ ] 4. Better Auth Setup + Drizzle Integration + Middleware
+- [x] 4. Better Auth Setup + Drizzle Integration + Middleware
 
   **What to do**:
   - Configure Better Auth in `/src/lib/auth.ts`:
@@ -757,7 +757,7 @@ Wave 7 (P3 - Polish - 3 PARALLEL):
 
 ---
 
-- [ ] 5. Auth Pages + Profile CRUD + Role Selection
+- [x] 5. Auth Pages + Profile CRUD + Role Selection
 
   **What to do**:
   - `/src/app/auth/page.tsx` - 로그인/회원가입 (Client Component)
@@ -837,7 +837,7 @@ Wave 7 (P3 - Polish - 3 PARALLEL):
 
 ---
 
-- [ ] 6. Auth Integration Tests + E2E
+- [x] 6. Auth Integration Tests + E2E
 
   **What to do**:
   - Playwright E2E: `e2e/auth-flow.spec.ts`

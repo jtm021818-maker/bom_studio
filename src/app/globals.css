@@ -1,26 +1,69 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tw-animate-css";
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* === Pastel Aura Base Colors === */
+  --color-cream: #FFF8F0;
+  --color-peach-50: #FFF5EE;
+  --color-peach-100: #FFE8D6;
+  --color-peach-200: #FFD4B8;
+  --color-peach-300: #FFC09A;
+  --color-peach-400: #FFAC7C;
+  --color-peach-500: #FF9B6A;
+  --color-serenity-50: #F0F4FF;
+  --color-serenity-100: #D6E4FF;
+  --color-serenity-200: #B8CFFF;
+  --color-serenity-300: #9AB8FF;
+  --color-serenity-400: #7CA1FF;
+  --color-serenity-500: #6B8FE6;
+
+  /* === Glass Morphism === */
+  --color-glass: rgba(255, 255, 255, 0.72);
+  --color-glass-border: rgba(255, 255, 255, 0.18);
+
+  /* === Status Colors === */
+  --color-status-open: #4ADE80;
+  --color-status-progress: #60A5FA;
+  --color-status-review: #FBBF24;
+  --color-status-completed: #34D399;
+  --color-status-disputed: #F87171;
+
+  /* === Design Tokens === */
+  --radius-jelly: 1rem;
+  --shadow-soft: 0 2px 16px rgba(0, 0, 0, 0.06);
+
+  /* === shadcn/ui CSS Variables === */
+  --color-background: var(--color-cream);
+  --color-foreground: #1a1a2e;
+  --color-card: #ffffff;
+  --color-card-foreground: #1a1a2e;
+  --color-popover: #ffffff;
+  --color-popover-foreground: #1a1a2e;
+  --color-primary: #FF9B6A;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #6B8FE6;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #f5f0eb;
+  --color-muted-foreground: #737373;
+  --color-accent: #FFE8D6;
+  --color-accent-foreground: #1a1a2e;
+  --color-destructive: #F87171;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #e5ddd5;
+  --color-input: #e5ddd5;
+  --color-ring: #FF9B6A;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, var(--color-cream) 0%, var(--color-peach-50) 50%, var(--color-serenity-50) 100%);
+  color: var(--color-foreground);
+  min-height: 100vh;
 }
